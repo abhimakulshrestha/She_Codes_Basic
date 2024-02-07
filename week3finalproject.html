@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <style>
+      background {
+        background-image: linear-gradient(to top, #9198e5 0% ,#e66465, 100% );
+        }
+      h1 {
+         text-align: center;
+         
+        }
+      h2{
+        text-align: center;
+        border: 1px solid;
+        padding: 20px;
+        font-size: 20px;
+        border-radius: 4px;
+      }  
+      img{
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+      p{
+        line-height: 1.5;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 100px;
+      }
+      button{
+        display:block;
+        margin: 0 auto;
+        background: #dbcefc;
+        font-size: 15px;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+        transition: 200ms;
+      }
+      button:hover{
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+    </style>
+</head>
+<body>
+    <div>
+    <h1><strong>
+        <em>
+        Hi,I am an Apple!
+    </em>
+    </strong>
+    </h1>
+    <h2><em>
+        You should eat an apple everyday.
+    </em>
+    </h2>
+    <img src="https://img.freepik.com/premium-vector/cute-red-apple-fruit-sticker-digital-illustration-apple-vector_704771-218.jpg?w=2000"
+    alt = "Apple"
+    width = "400"
+    />
+</div>
+    <p><em>
+        Apples are round, edible fruits that come from apple trees.<br />
+        The apple tree is a domesticated member of the rose family (Rosaceae).<br />
+        Apples are a popular fresh fruit, but they are also used to make juice,<br />
+        jelly, applesauce, vinegar, and apple butter.<br />
+        Apples are a good source of fiber, vitamin C, and antioxidants.<br /> 
+        They may help with healthy digestion, brain health, and weight management.<br />
+        Some evidence suggests that apples may also protect against <br />
+        certain chronic diseases, including cancer, heart disease, and type 2 diabetes.<br /> 
+        Apples contain carbs, which can raise blood sugar levels.<br />
+        However, the fiber in apples helps stabilize blood sugar levels.<br /> 
+        <a href = "https://en.wikipedia.org/wiki/Apple"target = "_blank">
+            Learn more about Apple on wikipedia.
+        </a>
+    </em>
+    </p>
+    <button>
+        Buy an Apple
+    </button>
+    <script>
+        function buyApple(){
+            let name =  prompt("What is your name?");
+            let apple = prompt("Do you like apples?");
+            let money = prompt("At what price do you want to buy the apples?");
+            if(money <=200){
+                alert(name+", You can buy the apples");
+            }
+            else{
+                alert(name+", You can not buy the apples"); 
+            }
+        }
+         let applyButton = document.querySelector("button");
+         applyButton.addEventListener("click" , buyApple);
+        
+    </script>
+    <br />
+    <br />
+    <em>
+    This page is build by Abhima Kulshrestha.
+</em>
+    <hr />
+</body>
+</html>
